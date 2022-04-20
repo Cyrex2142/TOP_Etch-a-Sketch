@@ -9,9 +9,21 @@
 </head>
 <body>
     <main>
-        <div class="sketch-panel">
+        <div id="sketch-panel">
 
         </div>
+        <script>
+            function generateGrid() {
+                const gridBox = document.getElementById('sketch-panel');
+                const gridUnit = "<div id='gridUnit'></div>\n"
+                let i = 0;
+                while(i < 256){
+                    gridBox.innerHTML += gridUnit;
+                    i++;
+                }
+            }
+            generateGrid();
+        </script>
     </main>
 </body>
 </html>
