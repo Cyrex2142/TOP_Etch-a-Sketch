@@ -12,6 +12,12 @@ body {
     grid-template-columns: 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw;
     grid-template-rows: 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw 2.8125vw;
 }
+.gridUnitFilled {
+    width: 2.8125vw;
+    height: 2.8125vw;
+    border: .5px solid black;
+    background-color: black;
+}
 #gridUnit {
     width: 2.8125vw;
     height: 2.8125vw;

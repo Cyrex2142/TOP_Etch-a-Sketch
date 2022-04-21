@@ -23,6 +23,13 @@
                 }
             }
             generateGrid();
+
+            const node = document.getElementById('gridUnit');
+            
+            node.addEventListener('click', function fillGrid() {
+                node.className = 'gridUnitFilled';
+            })
+
         </script>
     </main>
 </body>
