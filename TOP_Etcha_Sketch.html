@@ -15,7 +15,7 @@
         <script>
             function generateGrid() {
                 const gridBox = document.getElementById('sketch-panel');
-                const gridUnit = "<div id='gridUnit'></div>\n"
+                const gridUnit = "<div class='gridUnit'></div>\n"
                 let i = 0;
                 while(i < 256){
                     gridBox.innerHTML += gridUnit;
@@ -24,11 +24,14 @@
             }
             generateGrid();
 
-            const node = document.getElementById('gridUnit');
-            
-            node.addEventListener('click', function fillGrid() {
-                node.className = 'gridUnitFilled';
+            const node = document.querySelectorAll('.gridUnit');
+            node.forEach(element => {
+                element.addEventListener('click', function fillGrid() {
+                element.className = 'gridUnitFilled';
             })
+            });
+            console.log(node);
+            
 
         </script>
     </main>
