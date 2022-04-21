@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EtchaSketch</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+    </script>
 </head>
 <body>
     <main>
+        <div id="clear-btn">
+            <button type="reset" id="btn-clear" onclick="clearBoard()">Clear Board</button>
+        </div>
         <div id="sketch-panel">
+            
 
         </div>
         <script>
@@ -28,9 +34,15 @@
             node.forEach(element => {
                 element.addEventListener('click', function fillGrid() {
                 element.className = 'gridUnitFilled';
-            })
+                })
+                
             });
-            console.log(node);
+            let grids = document.querySelectorAll('.gridUnit');
+            function clearBoard(){
+                grids.forEach(element => {
+                    element.className = ('gridUnit');
+                });
+            }
             
 
         </script>
